@@ -1,2 +1,4 @@
 # Expression-Evaluator
- A simple expression evaluator using python and kivy.
+ A simple expression evaluator made with python and kivy.
+ 
+ ![Preview image](/preview/preview.gif)
