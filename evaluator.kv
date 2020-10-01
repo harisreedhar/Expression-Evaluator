@@ -1,0 +1,29 @@
+<EvalGridLayout>:
+    id: evaluater
+    display: user_input
+    rows: 3
+    padding: 10
+    spacing: 10
+ 
+    # Where input is displayed
+    BoxLayout:
+        size_hint: 1.0, 0.75
+        TextInput:
+            id: user_input
+            font_size: 32
+            multiline: False
+            hint_text: 'Expression'
+            background_color: 0,0,0,0  
+            foreground_color: 0.5, 0.3, 0.7, 1
+
+    # to the trigger eval()
+    BoxLayout:
+        size_hint: 1.0, 0.25
+        Button:
+            font_size: 24
+            text: "Evaluate"
+            markup: True
+            color: 1,1,1,1
+            background_normal: ''
+            background_color: 0.6, 0.4, 0.8, 1
+            on_press: evaluater.evaluate(user_input.text)
